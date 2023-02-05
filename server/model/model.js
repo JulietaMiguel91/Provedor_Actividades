@@ -5,13 +5,13 @@ var schema = new mongoose.Schema({
         type : String,
         required: true
     },
-    email : {
+    activity : {
         type: String,
         required: true,
-        unique: true
+       
     },
-    gender : String,
-    status : String
+    url : String
+  
 })
 
 const Userdb = mongoose.model('userdb', schema);

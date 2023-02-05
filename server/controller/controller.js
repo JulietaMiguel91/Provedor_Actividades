@@ -11,9 +11,8 @@ exports.create = (req,res)=>{
     // new user
     const user = new Userdb({
         name : req.body.name,
-        email : req.body.email,
-        gender: req.body.gender,
-        status : req.body.status
+        activity:req.body.activity,
+        url : "http://localhost:3000/api/analitcs"
     })
 
     // save user in the database
